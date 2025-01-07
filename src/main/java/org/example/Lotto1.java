@@ -19,7 +19,6 @@ public class Lotto1 {
 
                 if(result[j] == temp){
                     System.out.println("중복 발생 : " + result[j]);
-                    continue;
                 
                 }
             }
