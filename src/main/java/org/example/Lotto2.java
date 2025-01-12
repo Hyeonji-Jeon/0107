@@ -13,18 +13,18 @@ public class Lotto2 {
 
         int money = scanner.nextInt();
 
-        int ticket = money / 1000;
+        int ticket = money / 1000;        //유지하고 싶은 값은 루프 바깥에 선언.
 
         for (int j = 0; j < ticket; j++) {
 
-
             int[] balls = new int[45];
 
-            for (int i = 0; i < balls.length; i++) {
-                balls[i] = i + 1;
+            int blength = balls.length;  //루프 바깥에 선언해야 좀더 성능이 좋음
 
+            for (int i = 0; i < blength; i++) {
+              balls[i] = i + 1;
             }
-           // System.out.println(Arrays.toString(balls));
+            //System.out.println(Arrays.toString(balls));
 
             //임의의 숫자 0부터 44까지 - 6번 뽑기
             for (int i = 0; i < 6; ) {
